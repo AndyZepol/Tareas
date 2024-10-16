@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: #faf7f5;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 70px;
+    background-color: #efe8e2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin: 10px;
+    border-radius: 20px;
+   
+}
+
+.menu-item {
+    width: 50px;
+    height: 50px;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item1 {
+    width: 50px;
+    height: 50px;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu-item1>span{
+    background-color: #f9f9f9;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.menu-item2>span{
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.active {
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.filters {
+    display: flex;
+    gap: 15px;
+    
+}
+
+.filter {
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #e5e5e5;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center; /* Alinear ambos al centro */
+}
+
+.filter.active {
+    background-color: black;
+    color: white;
+    
+  
+}
+.filter.active > span{
+    background-color: rgb(254, 252, 252);
+    color: rgb(7, 7, 7);
+    border-radius: 100%;
+    border: 2px solid #ffffff;
+    margin-right: 10px;
+
+}
+.filter>span{
+    background-color: rgb(254, 252, 252);
+    color: rgb(7, 7, 7);
+    border-radius: 100%;
+    border: 2px solid #ffffff;
+    margin-right: 10px;
+}
+
+.courses {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.course-card {
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.lap{
+    display: flex;
+    margin-bottom: 20px;
+}
+.lap>p{
+    font-size: 15px;
+}
+.lap span{
+    background-color: #ffffff; /* Fondo blanco para los íconos */
+    color: #000000; /* Color negro para los íconos */
+    padding: 5px; /* Espacio alrededor de los íconos */
+    border-radius: 50%; /* Para dar un efecto circular al fondo blanco */
+    margin-right: 8px;
+}
+.lap>span:last-child{
+    margin-left: 30%;
+
+    background-color: #ffffff; /* Fondo blanco para los íconos */
+    color: #000000; /* Color negro para los íconos */
+    padding: 5px; /* Espacio alrededor de los íconos */
+    border-radius: 15%; /* Para dar un efecto circular al fondo blanco */
+    height: 25px;
+}
+.course-card:first-child{
+    background-color: #e4bebf;
+}
+.course-card:nth-child(2){
+    background-color: #f0dcba;
+}
+.course-card:nth-child(3){
+    background-color: #d1cdfe;
+}
+.course-card:nth-child(4){
+    background-color: #c8eed6;
+}
+.my-course1 {
+    background-color:#d1cdfe; /* Fondo morado */
+}
+
+/* Segunda tarjeta con fondo naranja */
+.my-course1 {
+    background-color: orange; /* Fondo naranja */
+}
+
+.course-card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.course-card span {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Profile Section */
+.profile-section {
+    margin-top: 10px;
+    width: 300px;
+    background-color: #efe8e2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 20px;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.icons-profile{
+    display: flex;
+    
+}
+.confi{
+     margin-left: 110px;
+     margin-right: 10px;
+}
+
+.noti{
+    margin-left: 10px;
+    margin-right: 110px;
+}
+.friends {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    height: 40px;
+}
+
+.friends>span:first-child {
+    font-size: 27px; /* Tamaño del icono */
+    margin-right: 10px;
+}
+
+.si {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Para que el contenido se estire */
+    justify-content: space-between;
+    height: 5px;
+}
+
+.si>p {
+    font-weight: bold;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.si>img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: -8px; /* Para superponer las imágenes */
+    border: 2px solid white; /* Borde blanco para las imágenes */
+}
+.si>img :first-child{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: -8px; /* Para superponer las imágenes */
+    border: 2px solid white; 
+}
+
+.friends>span:last-child {
+    font-size: 20px; /* Icono de flecha a la derecha */
+    color: gray;
+    margin-left: 10px;
+}
+
+.friends img {
+    display: inline-block;
+}
+
+
+.activity {
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    height: 180px;
+}
+
+.activity>img{
+    height:100px;
+    width: 220px;
+}
+
+.activity>hr{
+    border: none; 
+    height: 2px; 
+    background-color: #f7f4f0; 
+}
+
+.point{
+    display: flex;
+    margin-bottom: 10px;
+}
+.point1{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.point1>h4{
+    margin-right: 70px;
+    font-size: 10px;
+
+}
+
+
+
+.point>p:first-child{
+    margin-right: 10px;
+}
+
+.point>p:last-child {
+    position: relative;
+    top: -3px; 
+    background-color: #f7f4f0;
+    border-radius: 20px;
+    font-size: 14px;
+    
+}
+
+.coursesp{
+   margin-left: 2px; 
+   margin-bottom: 2px;
+}
+
+
+
+.parrafo-lap {
+    margin-top: -15px;
+    display: flex;
+    align-items: center; /* Para centrar los elementos */
+}
+
+.parrafo-lap p {
+    margin-top: -2px;
+    font-size: 10px;
+    display: flex;
+    align-items: center; /* Alinear los íconos y el texto verticalmente */
+    margin: 5px 0; /* Espacio entre los párrafos */
+}
+
+.parrafo-lap span {
+    background-color: #ffffff; /* Fondo blanco para los íconos */
+    color: #000000; /* Color negro para los íconos */
+    padding: 5px; /* Espacio alrededor de los íconos */
+    border-radius: 50%; /* Para dar un efecto circular al fondo blanco */
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+}
+
+.parrafo-lap p:last-child {
+    background-color: #ffffff; /* Fondo blanco para el segundo párrafo */
+    padding: 5px; /* Espacio entre el borde y el contenido */
+    border-radius: 20px; /* Bordes redondeados para el párrafo */
+    margin-left: 70px;
+}
+
+
+
+
+.activity-chart {
+    background-color: #e5e5e5;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.my-courses h4 {
+    margin-bottom: 15px;
+}
+
+.my-course1 {
+    margin-top: 10px;
+    background-color: #ffefef;
+}
+
+
+.fin{
+    display: flex;
+}
+.fin>p{
+    margin-right: 40%;
+}
+.fin > img {
+    display: flex; /* Asegura que las imágenes se alineen correctamente */
+    justify-content: flex-end; /* Alinea el contenido al final */
+    width: 25px; /* Ancho de la imagen */
+    height: 25px; /* Altura de la imagen */
+    border-radius: 50%; /* Hace la imagen circular */
+    margin-left: -8px; /* Superpone las imágenes ligeramente */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor circular */
+}
+
